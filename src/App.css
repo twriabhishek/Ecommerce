@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Jost:wght@900&family=Poppins:wght@300&family=Roboto:wght@300;400;700;900&family=Urbanist:ital,wght@0,700;1,900&display=swap");
+body {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+/***************Nav-Bar CSS Start********************/
+.cart-container {
+  position: relative;
+  display: inline-block;
+}
+.cart-count {
+  position: absolute;
+  top: -7px;
+  right: 15px;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  width: 22px;
+  height: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+}
+
+
+
+/**************Nav-Bar CSS End*******************/
+
+/**************Model CSS End*******************/
+.modal {
+  background-color: rgba(0, 0, 0, 0.705);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  border: 1px solid #888;
+}
+
+.fa-solid {
+  cursor: pointer;
+}
+
+.modal .modal-content {
+  width: 45%;
+}
+
+.carousel-inner {
+  width: 90%;
+}
+
+.carousel-control-next .visually-hidden {
+  color: black; /* Set the color to black */
+}
+.carousel-control-next .carousel-control-next-icon {
+  color: black;
+}
+.carousel-control-prev .visually-hidden {
+  color: black; /* Set the color to black */
+}
+.carousel-control-prev .carousel-control-prev-icon {
+  color: black;
+}
+.carousel-indicators > button {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  margin: 0px 5px;
+}
+/**************Model CSS End*******************/
+
+/**************Home CSS End*******************/
+.sec-1 {
+  background-image: url("https://images.pexels.com/photos/593324/pexels-photo-593324.jpeg?auto=compress&cs=tinysrgb&w=600");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+/**************Home CSS End*******************/
+
+/**************Outlet CSS End*******************/
+.outlet-container {
+  margin-top: 68px;
+}
+/**************Outlet CSS End*******************/
+
+/**************Contact CSS End*******************/
+.contact-section {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  min-height: 70vh;
+}
+
+.contact-section-main {
+  height: 100vh;
+}
+/**************Contact CSS End*******************/
+
+/**************Service CSS End*******************/
+.services-section {
+  padding: 6rem 0 3rem 0 !important;
+}
+.icon-span {
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: #29a9fd;
+  color: #fff;
+}
+.card-box:hover {
+  box-shadow: rgba(149, 157, 165, 0.2) 0 8px 24px;
+  cursor: pointer;
+}
+
+.business-section {
+  padding: 3rem;
+}
+/**************Service CSS End*******************/
+
+/***************Footer CSS Start*************************/
+.footer {
+  height: 70vh;
+  background: #10182f;
+}
+
+.footer .footer-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 3.5rem;
+  padding: 60px;
+}
+.footer-row .footer-col h4 {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+.footer-col .links {
+  margin-top: 20px;
+}
+.footer-col .links li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+.footer-col .links li a {
+  text-decoration: none;
+  color: #bfbfbf;
+}
+.footer-col .links li a:hover {
+  color: #fff;
+}
+.footer-col p {
+  margin: 20px 0;
+  color: #bfbfbf;
+  max-width: 300px;
+}
+.footer-col form {
+  display: flex;
+  gap: 5px;
+}
+.footer-col input {
+  height: 40px;
+  border-radius: 6px;
+  background: none;
+  width: 100%;
+  outline: none;
+  border: 1px solid #7489c6;
+  caret-color: #fff;
+  color: #fff;
+  padding-left: 10px;
+}
+.footer-col input::placeholder {
+  color: #ccc;
+}
+.footer-col form button {
+  background: #fff;
+  outline: none;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.2s ease;
+}
+.footer-col form button:hover {
+  background: #cecccc;
+}
+.footer-col .icons {
+  display: flex;
+  margin-top: 30px;
+  gap: 30px;
+  cursor: pointer;
+}
+.footer-col .icons i {
+  color: #afb6c7;
+}
+.footer-col .icons i:hover {
+  color: #fff;
+}
+@media (max-width: 768px) {
+  .footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    transform: none;
+    width: 100%;
+    border-radius: 0;
+  }
+  .footer .footer-row {
+    padding: 20px;
+    gap: 1rem;
+  }
+  .footer-col form {
+    display: block;
+  }
+  .footer-col form :where(input, button) {
+    width: 100%;
+  }
+  .footer-col form button {
+    margin: 10px 0 0 0;
+  }
+}
+/******************Footer CSS End*********************/
+
+/******************Responsive Css*******************************/
+@media (max-width: 767.98px) {
+  .border-sm-start-none {
+    border-left: none !important;
+  }
+}
+
+@media (min-width: 1025px) {
+  .h-custom {
+    height: 100vh !important;
+  }
+}
+/*******************Responsive Css*****************************/
