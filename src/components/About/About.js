@@ -31,7 +31,7 @@ const About = () => {
                     <h5 class="my-3 text-capitalize fw-bold">
                       {item.category}
                     </h5>
-                    <p class="mb-5 text-capitalize" style={{height:"350px", overflowY:"scroll"}}>{item.description}</p>
+                    <p class="mb-5 text-capitalize" style={{height:"150px", overflowY:"scroll"}}>{item.description}</p>
                     <div class="d-flex justify-content-center align-items-center">
                       <a
                         href="#services"

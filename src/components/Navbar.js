@@ -14,9 +14,9 @@ const Navbar = () => {
   return (
     <div>
       <nav className="navbar fixed-top navbar-expand-lg navbar-light bg-light">
-        <a
+        <Link
           className="navbar-brand d-flex justify-content-between align-items-center "
-          href="#"
+          to="#"
         >
           <img
             src="/assets/images/icons8-e-commerce-64.png"
@@ -26,7 +26,8 @@ const Navbar = () => {
             alt=""
           />
           e-Commerce
-        </a>
+        </Link>
+        
         <button
           className="navbar-toggler"
           type="button"
@@ -61,38 +62,38 @@ const Navbar = () => {
               </Link>
             </li>
           </ul>
-        </div>
-        <ul className="navbar-nav ml-auto d-flex flex-row">
-          <li className="nav-item active">
-            <Link
-              className="nav-link ml-4"
-              to="/addinCart"
-              onClick={() => console.log(cart)}
-            >
-              <div className="cart-container">
+          <ul className="navbar-nav ml-auto d-flex flex-row">
+            <li className="nav-item active">
+              <Link
+                className="nav-link ml-4"
+                to="/addinCart"
+                onClick={() => console.log(cart)}
+              >
+                <div className="cart-container">
+                  <img
+                    src="/assets/images/cart.svg"
+                    width="30"
+                    height="30"
+                    className="d-inline-block align-top mr-4 cart-icon"
+                    alt=""
+                  />
+                  <span className="cart-count">{totalCount}</span>
+                </div>
+              </Link>
+            </li>
+            <li className="nav-item active">
+              <Link className="nav-link" to="#">
                 <img
-                  src="/assets/images/cart.svg"
+                  src="/assets/images/person-circle.svg"
                   width="30"
                   height="30"
-                  className="d-inline-block align-top mr-4 cart-icon"
+                  className="d-inline-block align-top"
                   alt=""
                 />
-                <span className="cart-count">{totalCount}</span>
-              </div>
-            </Link>
-          </li>
-          <li className="nav-item active">
-            <a className="nav-link" href="#">
-              <img
-                src="/assets/images/person-circle.svg"
-                width="30"
-                height="30"
-                className="d-inline-block align-top"
-                alt=""
-              />
-            </a>
-          </li>
-        </ul>
+              </Link>
+            </li>
+          </ul>
+        </div>
       </nav>
       <div className="">
         <Outlet />

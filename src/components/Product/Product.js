@@ -49,7 +49,6 @@ const Product = ({ product }) => {
                         <div className="bg-image hover-zoom ripple rounded ripple-surface">
                           <img
                             src={product.thumbnail}
-                            // className="w-100 h-100"
                             alt={product.title}
                             style={{ height: "200px", width:"200px" }}
                           />

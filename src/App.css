@@ -118,7 +118,7 @@ body {
 
 /***************Footer CSS Start*************************/
 .footer {
-  height: 70vh;
+  height: auto;
   background: #10182f;
 }
 
