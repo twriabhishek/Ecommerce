@@ -64,7 +64,7 @@ const AddinCart = () => {
                                     src={item.thumbnail}
                                     className="img-fluid rounded-3 mr-3"
                                     alt="Shopping item"
-                                   
+                                    style={{ width: "65px" }}
                                   />
                                 </div>
                                 <div className="ms-3">
